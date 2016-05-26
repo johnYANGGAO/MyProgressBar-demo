@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:myprogressbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/holo"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="确定" />
+
+    <EditText
+        android:id="@+id/max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="输入指定额度"
+        android:inputType="number" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/nowprogress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/max"
+        android:layout_below="@+id/max"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="输入当前额度"
+        android:inputType="number" >
+    </EditText>
+
+    <com.yonggao.myprogressbardemo.MyProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        myprogressbar:complete_color="@color/blue"
+        myprogressbar:fill_color="@color/holo"
+        myprogressbar:maxprogress="100"
+        android:padding="8dp"
+        myprogressbar:text_color="@color/blue"
+        myprogressbar:text_size="40sp"
+        myprogressbar:text_visibility="visible"
+        myprogressbar:uncomplete_color="@color/dan_hui" />
+
+</RelativeLayout>

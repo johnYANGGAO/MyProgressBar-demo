@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="holo">#ffffff</color>
+    <color name="dan_hui">#e6e6e6</color>
+    <color name="blue">#1e90ff</color>
+    <color name="glass">#00000000</color>
+
+</resources>
